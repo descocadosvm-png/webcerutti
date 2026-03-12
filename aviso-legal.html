@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso Legal | Lacteos Cerutti</title>
+    <style>
+        :root {
+            --primario: #0a192f;
+            --acento: #c2a371;
+            --texto: #334155;
+            --bg: #f8fafc;
+            --white: #ffffff;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Inter, sans-serif;
+            background: var(--bg);
+            color: var(--texto);
+            line-height: 1.65;
+        }
+        .legal-wrap {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 36px 24px 56px;
+        }
+        .kicker {
+            color: var(--acento);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: block;
+        }
+        h1 {
+            margin: 0 0 24px;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.35rem;
+            color: var(--primario);
+        }
+        section {
+            background: var(--white);
+            border: 1px solid rgba(194, 163, 113, 0.26);
+            border-radius: 14px;
+            padding: 22px 20px;
+            margin-bottom: 16px;
+        }
+        h2 {
+            margin: 0 0 10px;
+            color: var(--primario);
+            font-size: 1.05rem;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+        p { margin: 0 0 10px; font-size: 1rem; }
+        p:last-child { margin-bottom: 0; }
+        .legal-nav {
+            margin-top: 22px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .legal-nav a {
+            text-decoration: none;
+            color: var(--primario);
+            font-weight: 700;
+        }
+        .legal-nav a:hover { color: var(--acento); }
+        @media (max-width: 768px) and (orientation: portrait) {
+            .legal-wrap { padding: 22px 14px 40px; }
+            h1 { font-size: 1.88rem; }
+            section { padding: 16px 14px; border-radius: 10px; }
+            p { font-size: 0.98rem; }
+            .legal-nav { gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <main class="legal-wrap"></main>
+
+    <script>
+        (function () {
+            const langKey = 'cerutti-language';
+            const stored = window.localStorage.getItem(langKey);
+            const lang = ['es', 'en', 'pt'].includes(stored) ? stored : 'es';
+
+            const i18n = {
+                es: {
+                    docTitle: 'Aviso Legal | Lacteos Cerutti',
+                    kicker: 'Informacion Legal',
+                    h1: 'Aviso Legal',
+                    sections: [
+                        { h2: 'Titularidad', p: ['Este sitio web es titularidad de Lacteos Cerutti SRL (CUIT 30-70874220-8), con domicilio en Santa Fe 839, La Playosa, Cordoba, Codigo Postal 5911, Argentina.', 'Contacto: lacteoscerutti22@gmail.com | +54 353 5695412.'] },
+                        { h2: 'Condiciones de uso', p: ['El acceso y uso de este sitio implica la aceptacion de las presentes condiciones. El titular podra actualizar, modificar o eliminar contenidos, funcionalidades y condiciones sin previo aviso.'] },
+                        { h2: 'Propiedad intelectual', p: ['Los contenidos del sitio (textos, imagenes, marcas, logos, diseno y codigo) son propiedad de su titular o se utilizan con autorizacion. Queda prohibida su reproduccion total o parcial sin autorizacion expresa.'] },
+                        { h2: 'Responsabilidad', p: ['El titular no garantiza la ausencia de errores o interrupciones en el sitio y no sera responsable por danos derivados del uso, salvo disposicion legal en contrario.'] },
+                        { h2: 'Jurisdiccion y ley aplicable', p: ['Para cualquier controversia se aplicara la legislacion argentina y seran competentes los Tribunales Ordinarios de Villa Maria, Cordoba, Argentina.'] },
+                        { h2: 'Vigencia', p: ['Fecha de vigencia del presente Aviso Legal: 27 agosto 2003.'] }
+                    ],
+                    navLabel: 'Enlaces legales',
+                    navHome: 'Volver al inicio',
+                    navPrivacy: 'Politica de Privacidad',
+                    navCookies: 'Politica de Cookies'
+                },
+                en: {
+                    docTitle: 'Legal Notice | Lacteos Cerutti',
+                    kicker: 'Legal Information',
+                    h1: 'Legal Notice',
+                    sections: [
+                        { h2: 'Ownership', p: ['This website is owned by Lacteos Cerutti SRL (CUIT 30-70874220-8), with registered address at Santa Fe 839, La Playosa, Cordoba, Postal Code 5911, Argentina.', 'Contact: lacteoscerutti22@gmail.com | +54 353 5695412.'] },
+                        { h2: 'Terms of use', p: ['Access to and use of this site implies acceptance of these terms. The owner may update, modify, or remove content, features, and conditions without prior notice.'] },
+                        { h2: 'Intellectual property', p: ['Site content (texts, images, trademarks, logos, design, and code) belongs to its owner or is used with authorization. Total or partial reproduction without express authorization is prohibited.'] },
+                        { h2: 'Liability', p: ['The owner does not guarantee the absence of errors or interruptions on the site and will not be liable for damages arising from use, except where required by law.'] },
+                        { h2: 'Jurisdiction and applicable law', p: ['Any dispute will be governed by Argentine law and submitted to the Ordinary Courts of Villa Maria, Cordoba, Argentina.'] },
+                        { h2: 'Effective date', p: ['Effective date of this Legal Notice: August 27, 2003.'] }
+                    ],
+                    navLabel: 'Legal links',
+                    navHome: 'Back to home',
+                    navPrivacy: 'Privacy Policy',
+                    navCookies: 'Cookie Policy'
+                },
+                pt: {
+                    docTitle: 'Aviso Legal | Lacteos Cerutti',
+                    kicker: 'Informacao Legal',
+                    h1: 'Aviso Legal',
+                    sections: [
+                        { h2: 'Titularidade', p: ['Este site e de titularidade da Lacteos Cerutti SRL (CUIT 30-70874220-8), com domicilio em Santa Fe 839, La Playosa, Cordoba, Codigo Postal 5911, Argentina.', 'Contato: lacteoscerutti22@gmail.com | +54 353 5695412.'] },
+                        { h2: 'Condicoes de uso', p: ['O acesso e uso deste site implicam a aceitacao das presentes condicoes. O titular podera atualizar, modificar ou remover conteudos, funcionalidades e condicoes sem aviso previo.'] },
+                        { h2: 'Propriedade intelectual', p: ['Os conteudos do site (textos, imagens, marcas, logos, design e codigo) sao propriedade do titular ou sao usados com autorizacao. E proibida a reproducao total ou parcial sem autorizacao expressa.'] },
+                        { h2: 'Responsabilidade', p: ['O titular nao garante ausencia de erros ou interrupcoes no site e nao sera responsavel por danos decorrentes do uso, salvo disposicao legal em contrario.'] },
+                        { h2: 'Jurisidicao e lei aplicavel', p: ['Para qualquer controversia sera aplicada a legislacao argentina e serao competentes os Tribunais Ordinarios de Villa Maria, Cordoba, Argentina.'] },
+                        { h2: 'Vigencia', p: ['Data de vigencia deste Aviso Legal: 27 de agosto de 2003.'] }
+                    ],
+                    navLabel: 'Links legais',
+                    navHome: 'Voltar ao inicio',
+                    navPrivacy: 'Politica de Privacidade',
+                    navCookies: 'Politica de Cookies'
+                }
+            };
+
+            const t = i18n[lang] || i18n.es;
+            document.documentElement.lang = lang;
+            document.title = t.docTitle;
+
+            const wrap = document.querySelector('.legal-wrap');
+            wrap.innerHTML = `
+                <span class="kicker">${t.kicker}</span>
+                <h1>${t.h1}</h1>
+                ${t.sections.map((section) => `
+                    <section>
+                        <h2>${section.h2}</h2>
+                        ${section.p.map((paragraph) => `<p>${paragraph}</p>`).join('')}
+                    </section>
+                `).join('')}
+                <nav class="legal-nav" aria-label="${t.navLabel}">
+                    <a href="index.html">${t.navHome}</a>
+                    <a href="privacidad.html">${t.navPrivacy}</a>
+                    <a href="cookies.html">${t.navCookies}</a>
+                </nav>
+            `;
+        })();
+    </script>
+</body>
+</html>

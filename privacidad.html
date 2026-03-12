@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politica de Privacidad | Lacteos Cerutti</title>
+    <style>
+        :root {
+            --primario: #0a192f;
+            --acento: #c2a371;
+            --texto: #334155;
+            --bg: #f8fafc;
+            --white: #ffffff;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Inter, sans-serif;
+            background: var(--bg);
+            color: var(--texto);
+            line-height: 1.65;
+        }
+        .legal-wrap {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 36px 24px 56px;
+        }
+        .kicker {
+            color: var(--acento);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: block;
+        }
+        h1 {
+            margin: 0 0 24px;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.35rem;
+            color: var(--primario);
+        }
+        section {
+            background: var(--white);
+            border: 1px solid rgba(194, 163, 113, 0.26);
+            border-radius: 14px;
+            padding: 22px 20px;
+            margin-bottom: 16px;
+        }
+        h2 {
+            margin: 0 0 10px;
+            color: var(--primario);
+            font-size: 1.05rem;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+        p { margin: 0 0 10px; font-size: 1rem; }
+        p:last-child { margin-bottom: 0; }
+        .legal-nav {
+            margin-top: 22px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .legal-nav a {
+            text-decoration: none;
+            color: var(--primario);
+            font-weight: 700;
+        }
+        .legal-nav a:hover { color: var(--acento); }
+        @media (max-width: 768px) and (orientation: portrait) {
+            .legal-wrap { padding: 22px 14px 40px; }
+            h1 { font-size: 1.88rem; }
+            section { padding: 16px 14px; border-radius: 10px; }
+            p { font-size: 0.98rem; }
+            .legal-nav { gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <main class="legal-wrap"></main>
+
+    <script>
+        (function () {
+            const langKey = 'cerutti-language';
+            const stored = window.localStorage.getItem(langKey);
+            const lang = ['es', 'en', 'pt'].includes(stored) ? stored : 'es';
+
+            const i18n = {
+                es: {
+                    docTitle: 'Politica de Privacidad | Lacteos Cerutti',
+                    kicker: 'Proteccion de Datos',
+                    h1: 'Politica de Privacidad',
+                    sections: [
+                        { h2: 'Responsable', p: ['En Lacteos Cerutti SRL (CUIT 30-70874220-8) respetamos su privacidad y protegemos sus datos personales.', 'Domicilio: Santa Fe 839, La Playosa, Cordoba, Codigo Postal 5911, Argentina.', 'Contacto general: lacteoscerutti22@gmail.com | +54 353 5695412.'] },
+                        { h2: 'Datos que podemos recopilar', p: ['Podemos recopilar datos de identificacion y contacto cuando usted nos escribe por formularios, correo electronico o canales comerciales (por ejemplo: razon social/nombre y email).'] },
+                        { h2: 'Finalidad del tratamiento', p: ['Usamos sus datos para responder consultas, gestionar solicitudes comerciales, brindar informacion sobre productos y mantener comunicacion operativa con clientes y distribuidores.'] },
+                        { h2: 'Base legal y conservacion', p: ['Tratamos sus datos sobre la base de su consentimiento y/o interes legitimo para atender su solicitud. Los datos se conservaran por un plazo de hasta 24 meses, salvo obligacion legal que exija un plazo distinto.'] },
+                        { h2: 'Cesion y proveedores', p: ['No comercializamos datos personales. Podremos compartirlos con proveedores tecnologicos que presten servicios para operar el sitio, bajo medidas de seguridad adecuadas.'] },
+                        { h2: 'Derechos del titular', p: ['Usted puede solicitar acceso, rectificacion, actualizacion o supresion de sus datos escribiendo a lacteoscerutti22@gmail.com.'] },
+                        { h2: 'Politica de menores', p: ['Este sitio no esta dirigido a menores de edad. Si detectamos datos personales de menores sin autorizacion valida de sus representantes legales, procederemos a su eliminacion en cuanto resulte posible.'] },
+                        { h2: 'Cambios de esta politica', p: ['Podemos actualizar esta politica para reflejar mejoras o cambios normativos. Se recomienda revisarla periodicamente.', 'Fecha de vigencia de esta Politica de Privacidad: 27 agosto 2003.'] },
+                        { h2: 'Jurisdiccion', p: ['Para cualquier controversia vinculada con esta Politica de Privacidad, seran competentes los Tribunales Ordinarios de Villa Maria, Cordoba, Argentina.'] }
+                    ],
+                    navLabel: 'Enlaces legales',
+                    navHome: 'Volver al inicio',
+                    navLegal: 'Aviso Legal',
+                    navCookies: 'Politica de Cookies'
+                },
+                en: {
+                    docTitle: 'Privacy Policy | Lacteos Cerutti',
+                    kicker: 'Data Protection',
+                    h1: 'Privacy Policy',
+                    sections: [
+                        { h2: 'Data controller', p: ['At Lacteos Cerutti SRL (CUIT 30-70874220-8) we respect your privacy and protect your personal data.', 'Address: Santa Fe 839, La Playosa, Cordoba, Postal Code 5911, Argentina.', 'General contact: lacteoscerutti22@gmail.com | +54 353 5695412.'] },
+                        { h2: 'Data we may collect', p: ['We may collect identification and contact data when you write to us through forms, email, or commercial channels (for example: company/name and email).'] },
+                        { h2: 'Purpose of processing', p: ['We use your data to answer inquiries, manage commercial requests, provide product information, and maintain operational communication with clients and distributors.'] },
+                        { h2: 'Legal basis and retention', p: ['We process your data based on your consent and/or legitimate interest to address your request. Data will be kept for up to 24 months, unless a legal obligation requires a different period.'] },
+                        { h2: 'Data sharing and providers', p: ['We do not sell personal data. We may share it with technology providers that deliver services to operate the site, under appropriate security measures.'] },
+                        { h2: 'Data subject rights', p: ['You may request access, rectification, update, or deletion of your data by writing to lacteoscerutti22@gmail.com.'] },
+                        { h2: 'Minors policy', p: ['This site is not intended for minors. If we detect personal data of minors without valid authorization from legal guardians, we will proceed with deletion as soon as possible.'] },
+                        { h2: 'Policy updates', p: ['We may update this policy to reflect improvements or regulatory changes. We recommend reviewing it periodically.', 'Effective date of this Privacy Policy: August 27, 2003.'] },
+                        { h2: 'Jurisdiction', p: ['Any dispute related to this Privacy Policy shall be submitted to the Ordinary Courts of Villa Maria, Cordoba, Argentina.'] }
+                    ],
+                    navLabel: 'Legal links',
+                    navHome: 'Back to home',
+                    navLegal: 'Legal Notice',
+                    navCookies: 'Cookie Policy'
+                },
+                pt: {
+                    docTitle: 'Politica de Privacidade | Lacteos Cerutti',
+                    kicker: 'Protecao de Dados',
+                    h1: 'Politica de Privacidade',
+                    sections: [
+                        { h2: 'Responsavel', p: ['Na Lacteos Cerutti SRL (CUIT 30-70874220-8) respeitamos sua privacidade e protegemos seus dados pessoais.', 'Domicilio: Santa Fe 839, La Playosa, Cordoba, Codigo Postal 5911, Argentina.', 'Contato geral: lacteoscerutti22@gmail.com | +54 353 5695412.'] },
+                        { h2: 'Dados que podemos coletar', p: ['Podemos coletar dados de identificacao e contato quando voce nos escreve por formularios, email ou canais comerciais (por exemplo: razao social/nome e email).'] },
+                        { h2: 'Finalidade do tratamento', p: ['Usamos seus dados para responder consultas, gerenciar solicitacoes comerciais, fornecer informacoes sobre produtos e manter comunicacao operacional com clientes e distribuidores.'] },
+                        { h2: 'Base legal e conservacao', p: ['Tratamos seus dados com base no seu consentimento e/ou interesse legitimo para atender sua solicitacao. Os dados serao conservados por ate 24 meses, salvo obrigacao legal que exija prazo diferente.'] },
+                        { h2: 'Compartilhamento e fornecedores', p: ['Nao comercializamos dados pessoais. Poderemos compartilha-los com fornecedores tecnologicos que prestem servicos para operar o site, sob medidas de seguranca adequadas.'] },
+                        { h2: 'Direitos do titular', p: ['Voce pode solicitar acesso, retificacao, atualizacao ou exclusao de seus dados escrevendo para lacteoscerutti22@gmail.com.'] },
+                        { h2: 'Politica de menores', p: ['Este site nao e direcionado a menores de idade. Se detectarmos dados pessoais de menores sem autorizacao valida de representantes legais, procederemos com a eliminacao assim que possivel.'] },
+                        { h2: 'Mudancas desta politica', p: ['Podemos atualizar esta politica para refletir melhorias ou mudancas regulatorias. Recomendamos revisao periodica.', 'Data de vigencia desta Politica de Privacidade: 27 de agosto de 2003.'] },
+                        { h2: 'Jurisidicao', p: ['Para qualquer controversia relacionada a esta Politica de Privacidade, serao competentes os Tribunais Ordinarios de Villa Maria, Cordoba, Argentina.'] }
+                    ],
+                    navLabel: 'Links legais',
+                    navHome: 'Voltar ao inicio',
+                    navLegal: 'Aviso Legal',
+                    navCookies: 'Politica de Cookies'
+                }
+            };
+
+            const t = i18n[lang] || i18n.es;
+            document.documentElement.lang = lang;
+            document.title = t.docTitle;
+
+            const wrap = document.querySelector('.legal-wrap');
+            wrap.innerHTML = `
+                <span class="kicker">${t.kicker}</span>
+                <h1>${t.h1}</h1>
+                ${t.sections.map((section) => `
+                    <section>
+                        <h2>${section.h2}</h2>
+                        ${section.p.map((paragraph) => `<p>${paragraph}</p>`).join('')}
+                    </section>
+                `).join('')}
+                <nav class="legal-nav" aria-label="${t.navLabel}">
+                    <a href="index.html">${t.navHome}</a>
+                    <a href="aviso-legal.html">${t.navLegal}</a>
+                    <a href="cookies.html">${t.navCookies}</a>
+                </nav>
+            `;
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politica de Cookies | Lacteos Cerutti</title>
+    <style>
+        :root {
+            --primario: #0a192f;
+            --acento: #c2a371;
+            --texto: #334155;
+            --bg: #f8fafc;
+            --white: #ffffff;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Inter, sans-serif;
+            background: var(--bg);
+            color: var(--texto);
+            line-height: 1.65;
+        }
+        .legal-wrap {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 36px 24px 56px;
+        }
+        .kicker {
+            color: var(--acento);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: block;
+        }
+        h1 {
+            margin: 0 0 24px;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.35rem;
+            color: var(--primario);
+        }
+        section {
+            background: var(--white);
+            border: 1px solid rgba(194, 163, 113, 0.26);
+            border-radius: 14px;
+            padding: 22px 20px;
+            margin-bottom: 16px;
+        }
+        h2 {
+            margin: 0 0 10px;
+            color: var(--primario);
+            font-size: 1.05rem;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+        p { margin: 0 0 10px; font-size: 1rem; }
+        p:last-child { margin-bottom: 0; }
+        .legal-nav {
+            margin-top: 22px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .legal-nav a {
+            text-decoration: none;
+            color: var(--primario);
+            font-weight: 700;
+        }
+        .legal-nav a:hover { color: var(--acento); }
+        @media (max-width: 768px) and (orientation: portrait) {
+            .legal-wrap { padding: 22px 14px 40px; }
+            h1 { font-size: 1.88rem; }
+            section { padding: 16px 14px; border-radius: 10px; }
+            p { font-size: 0.98rem; }
+            .legal-nav { gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <main class="legal-wrap"></main>
+
+    <script>
+        (function () {
+            const langKey = 'cerutti-language';
+            const stored = window.localStorage.getItem(langKey);
+            const lang = ['es', 'en', 'pt'].includes(stored) ? stored : 'es';
+
+            const i18n = {
+                es: {
+                    docTitle: 'Politica de Cookies | Lacteos Cerutti',
+                    kicker: 'Transparencia Digital',
+                    h1: 'Politica de Cookies',
+                    sections: [
+                        { h2: 'Que son las cookies', p: ['Las cookies y tecnologias similares son archivos o identificadores que el navegador guarda para recordar informacion y mejorar la experiencia de uso.'] },
+                        { h2: 'Uso actual en este sitio', p: ['Actualmente este sitio no utiliza cookies no esenciales de publicidad o analitica de terceros en forma activa.', 'Si utiliza almacenamiento local del navegador (localStorage) para recordar preferencias funcionales, por ejemplo el idioma seleccionado.'] },
+                        { h2: 'Responsable del sitio', p: ['El responsable del sitio es Lacteos Cerutti SRL (CUIT 30-70874220-8), con domicilio en Santa Fe 839, La Playosa, Cordoba, Codigo Postal 5911, Argentina.', 'Contacto: lacteoscerutti22@gmail.com | +54 353 5695412.'] },
+                        { h2: 'Finalidad', p: ['La finalidad del almacenamiento funcional es tecnica: recordar preferencias del usuario y facilitar la navegacion.'] },
+                        { h2: 'Gestion y desactivacion', p: ['Usted puede borrar o bloquear cookies y almacenamiento local desde la configuracion de su navegador. Algunas funciones de preferencia pueden dejar de recordarse.'] },
+                        { h2: 'Actualizaciones', p: ['Si en el futuro se incorporan cookies no esenciales (analitica/marketing), esta politica se actualizara y se habilitara el mecanismo de consentimiento correspondiente.'] },
+                        { h2: 'Jurisdiccion y vigencia', p: ['Para cualquier controversia vinculada con esta politica, seran competentes los Tribunales Ordinarios de Villa Maria, Cordoba, Argentina.', 'Fecha de vigencia de esta Politica de Cookies: 27 agosto 2003.'] }
+                    ],
+                    navLabel: 'Enlaces legales',
+                    navHome: 'Volver al inicio',
+                    navLegal: 'Aviso Legal',
+                    navPrivacy: 'Politica de Privacidad'
+                },
+                en: {
+                    docTitle: 'Cookie Policy | Lacteos Cerutti',
+                    kicker: 'Digital Transparency',
+                    h1: 'Cookie Policy',
+                    sections: [
+                        { h2: 'What cookies are', p: ['Cookies and similar technologies are files or identifiers stored by the browser to remember information and improve the user experience.'] },
+                        { h2: 'Current use on this site', p: ['Currently this site does not actively use non-essential third-party advertising or analytics cookies.', 'It does use browser local storage (localStorage) to remember functional preferences, for example the selected language.'] },
+                        { h2: 'Site controller', p: ['The site controller is Lacteos Cerutti SRL (CUIT 30-70874220-8), with address at Santa Fe 839, La Playosa, Cordoba, Postal Code 5911, Argentina.', 'Contact: lacteoscerutti22@gmail.com | +54 353 5695412.'] },
+                        { h2: 'Purpose', p: ['The purpose of functional storage is technical: to remember user preferences and facilitate browsing.'] },
+                        { h2: 'Management and deactivation', p: ['You can delete or block cookies and local storage from your browser settings. Some preference features may no longer be remembered.'] },
+                        { h2: 'Updates', p: ['If non-essential cookies (analytics/marketing) are added in the future, this policy will be updated and the corresponding consent mechanism will be enabled.'] },
+                        { h2: 'Jurisdiction and effective date', p: ['Any dispute related to this policy shall be submitted to the Ordinary Courts of Villa Maria, Cordoba, Argentina.', 'Effective date of this Cookie Policy: August 27, 2003.'] }
+                    ],
+                    navLabel: 'Legal links',
+                    navHome: 'Back to home',
+                    navLegal: 'Legal Notice',
+                    navPrivacy: 'Privacy Policy'
+                },
+                pt: {
+                    docTitle: 'Politica de Cookies | Lacteos Cerutti',
+                    kicker: 'Transparencia Digital',
+                    h1: 'Politica de Cookies',
+                    sections: [
+                        { h2: 'O que sao cookies', p: ['Cookies e tecnologias semelhantes sao arquivos ou identificadores que o navegador salva para lembrar informacoes e melhorar a experiencia de uso.'] },
+                        { h2: 'Uso atual neste site', p: ['Atualmente este site nao utiliza ativamente cookies nao essenciais de publicidade ou analitica de terceiros.', 'Ele utiliza armazenamento local do navegador (localStorage) para lembrar preferencias funcionais, por exemplo o idioma selecionado.'] },
+                        { h2: 'Responsavel pelo site', p: ['O responsavel pelo site e Lacteos Cerutti SRL (CUIT 30-70874220-8), com domicilio em Santa Fe 839, La Playosa, Cordoba, Codigo Postal 5911, Argentina.', 'Contato: lacteoscerutti22@gmail.com | +54 353 5695412.'] },
+                        { h2: 'Finalidade', p: ['A finalidade do armazenamento funcional e tecnica: lembrar preferencias do usuario e facilitar a navegacao.'] },
+                        { h2: 'Gestao e desativacao', p: ['Voce pode apagar ou bloquear cookies e armazenamento local nas configuracoes do navegador. Algumas funcoes de preferencia podem deixar de ser lembradas.'] },
+                        { h2: 'Atualizacoes', p: ['Se no futuro forem incorporados cookies nao essenciais (analitica/marketing), esta politica sera atualizada e o mecanismo de consentimento correspondente sera habilitado.'] },
+                        { h2: 'Jurisidicao e vigencia', p: ['Para qualquer controversia relacionada a esta politica, serao competentes os Tribunais Ordinarios de Villa Maria, Cordoba, Argentina.', 'Data de vigencia desta Politica de Cookies: 27 de agosto de 2003.'] }
+                    ],
+                    navLabel: 'Links legais',
+                    navHome: 'Voltar ao inicio',
+                    navLegal: 'Aviso Legal',
+                    navPrivacy: 'Politica de Privacidade'
+                }
+            };
+
+            const t = i18n[lang] || i18n.es;
+            document.documentElement.lang = lang;
+            document.title = t.docTitle;
+
+            const wrap = document.querySelector('.legal-wrap');
+            wrap.innerHTML = `
+                <span class="kicker">${t.kicker}</span>
+                <h1>${t.h1}</h1>
+                ${t.sections.map((section) => `
+                    <section>
+                        <h2>${section.h2}</h2>
+                        ${section.p.map((paragraph) => `<p>${paragraph}</p>`).join('')}
+                    </section>
+                `).join('')}
+                <nav class="legal-nav" aria-label="${t.navLabel}">
+                    <a href="index.html">${t.navHome}</a>
+                    <a href="aviso-legal.html">${t.navLegal}</a>
+                    <a href="privacidad.html">${t.navPrivacy}</a>
+                </nav>
+            `;
+        })();
+    </script>
+</body>
+</html>
