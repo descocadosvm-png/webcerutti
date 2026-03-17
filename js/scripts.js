@@ -981,7 +981,7 @@ function renderEmpresa(container, data) {
             <div class="page-hero-img hero-img-empresa"></div>
             <div class="page-hero-text emp-hero-text">
                 <h2 id="emp-hero-title">${data.title}</h2>
-                ${data.heroSubtitle ? `<p id="emp-hero-subtitle" style="font-family:'Inter', sans-serif; font-size:clamp(0.9rem, 2vw, 1.3rem); font-weight:300; letter-spacing:4px; text-transform:uppercase;">${data.heroSubtitle}</p>` : ''}
+                ${data.heroSubtitle ? `<p id="emp-hero-subtitle" class="emp-hero-subtitle">${data.heroSubtitle}</p>` : ''}
             </div>
         </div>
         <div class="section-padding empresa-content-bg">
@@ -1018,32 +1018,32 @@ function renderEmpresa(container, data) {
                 </article>
             </section>
 
-            <div style="display:grid; grid-template-columns: 0.9fr 1.1fr; gap:60px; align-items: start;">
+            <div class="empresa-story-grid">
                 <div>
                     <div class="emp-extracto-3d">
                         <h3 id="emp-text-title" class="emp-text-title">${data.subtitle}</h3>
-                        <p id="emp-hist-1" class="text-justify" style="font-size:1.15rem; color:#475569; margin-bottom:20px;">
+                        <p id="emp-hist-1" class="text-justify empresa-story-text empresa-story-text-first">
                             ${data.historia}
                         </p>
-                        <p id="emp-hist-2" class="text-justify" style="font-size:1.15rem; color:#475569;">
+                        <p id="emp-hist-2" class="text-justify empresa-story-text">
                             ${data.historia2}
                         </p>
                     </div>
                 </div>
                 
                 <div>
-                    <p id="emp-video-label" style="font-size:0.7rem; font-weight:800; letter-spacing:1px; margin-bottom:10px;">
+                    <p id="emp-video-label" class="emp-video-label">
                         ${data.videoLabel}
                     </p>
-                    <div class="video-wrapper" style="box-shadow: var(--shadow-3d);">
-                        <video controls style="width:100%; height:100%; object-fit: cover;">
+                    <div class="video-wrapper emp-video-wrapper">
+                        <video controls class="emp-video-player">
                             <source src="img/historiacerutti.mp4" type="video/mp4">
                         </video>
                     </div>
 
-                    <div style="margin-top:40px; padding:30px; border-left:4px solid var(--acento); background:#f8fafc;">
-                        <h4 id="emp-mision-tit" style="color:#b89454; margin-bottom:10px;">${data.misionTit}</h4>
-                        <p id="emp-mision-desc" style="font-style:italic; color:#64748b;">${data.misionDesc}</p>
+                    <div class="emp-mission-box">
+                        <h4 id="emp-mision-tit" class="emp-mission-title">${data.misionTit}</h4>
+                        <p id="emp-mision-desc" class="emp-mission-desc">${data.misionDesc}</p>
                     </div>
                 </div>
             </div>
@@ -1086,17 +1086,17 @@ function renderEmpresa(container, data) {
                 <div class="quality-grid">
                     <div class="quality-info">
                         <div class="quality-card emp-quality-card">
-                            <p class="text-justify" style="color: #475569;">${t.calidadP1}</p>
+                            <p class="text-justify emp-quality-text">${t.calidadP1}</p>
                         </div>
 
                         <div class="quality-card emp-quality-card">
                             <h3>${t.calidadT2}</h3>
-                            <p class="text-justify" style="color: #475569;">${t.calidadP2}</p>
+                            <p class="text-justify emp-quality-text">${t.calidadP2}</p>
                         </div>
 
                         <div class="quality-card emp-quality-card">
                             <h3>${t.calidadT3}</h3>
-                            <p class="text-justify" style="color: #475569;">${t.calidadP3}</p>
+                            <p class="text-justify emp-quality-text">${t.calidadP3}</p>
                         </div>
                     </div>
                 </div>
@@ -1151,21 +1151,22 @@ function renderNovedades(container, data) {
             <div class="page-hero-img hero-img-novedades"></div>
             <div class="page-hero-text">
                 <h2>${data.title}</h2>
-                <p style="letter-spacing:5px;">${data.subtitle}</p>
+                <p class="novedades-hero-subtitle">${data.subtitle}</p>
             </div>
         </div>
         <div class="section-padding">
             <div class="section-header">
                 <h2>${data.title}</h2>
             </div>
-            <div class="grid-products novedades-grid" style="margin-top:18px;">
+            <div class="grid-products novedades-grid novedades-grid-spacing">
                 ${noticias.map(post => `
-                    <div class="product-card" style="text-align:left; padding:0; overflow:hidden;">
-                        <div style="height:200px; background:${post.img ? `url('${post.img}') center/cover no-repeat` : '#f1f5f9'};"></div> <div class="novedades-card-body" style="padding:30px;">
-                            <span class="tag" style="background:var(--acento); margin-bottom:15px; display:inline-block;">${post.tag}</span>
-                            <h3 style="margin-bottom:15px; font-family:'Libre Baskerville';">${post.tit}</h3>
-                            ${post.fecha ? `<p style="color:#0a192f; font-size:0.82rem; font-weight:700; letter-spacing:0.5px; margin:-4px 0 14px;">${post.fecha}</p>` : ''}
-                            <p class="novedades-desc novedades-desc-clamp" style="color:#64748b; font-size:0.9rem; line-height:1.6;">${post.desc}</p>
+                    <div class="product-card novedades-card">
+                        <div class="novedades-card-media" style="background:${post.img ? `url('${post.img}') center/cover no-repeat` : '#f1f5f9'};"></div>
+                        <div class="novedades-card-body">
+                            <span class="tag novedades-tag">${post.tag}</span>
+                            <h3 class="novedades-card-title">${post.tit}</h3>
+                            ${post.fecha ? `<p class="novedades-card-date">${post.fecha}</p>` : ''}
+                            <p class="novedades-desc novedades-desc-clamp novedades-card-desc">${post.desc}</p>
                             <div class="novedades-actions">
                                 <a href="#" class="novedades-toggle-btn" onclick="event.preventDefault(); expandNovedad(this);">${data.leerMas} →</a>
                                 <a href="#" class="novedades-toggle-btn novedades-collapse-btn" onclick="event.preventDefault(); collapseNovedad(this);">${data.contraer} ↑</a>
@@ -1593,13 +1594,13 @@ function verFicha(nombre, img, desc) {
 
             <div class="ficha-grid">
                 <div class="ficha-img-col">
-                    <img src="${img}" class="floating-cheese" style="width:80%;">
+                    <img src="${img}" class="floating-cheese ficha-product-image">
                 </div>
                 <div>
-                    <h2 style="font-family:'Libre Baskerville'; color:var(--primario); font-size:2.5rem; margin-bottom:10px;">
+                    <h2 class="ficha-title">
                         ${nombre.toUpperCase()}
                     </h2>
-                    <p style="margin-bottom:24px; font-size:1.1rem; color:#64748b;">${translatedDesc}</p>
+                    <p class="ficha-desc">${translatedDesc}</p>
 
                     <span class="ficha-badge">${labels.sheetBadge}</span>
                     <div class="tech-table-wrapper">
