@@ -7,7 +7,7 @@
         btnCon: "Contáctanos ✈",
         showcaseTitle: "NUESTROS PRODUCTOS",
         showcaseSubtitle: "Blandos · Semiduros · Duros",
-        fText: "© 2026 LÁCTEOS CERUTTI | LA PLAYOSA, CÓRDOBA, ARGENTINA.<br>TECNOLOGÍA Y TRADICIÓN EN CADA PIEZA.",
+        fText: "© 2026 LÁCTEOS CERUTTI | LA PLAYOSA, CÓRDOBA, ARGENTINA.<br><span class=\"footer-slogan-red\">PRODUCTOS PARA PALADARES EXIGENTES</span>",
         sections: {
             actividad: { 
                 title: "Nuestra Actividad Industrial", 
@@ -38,7 +38,7 @@
             contacto: { title: "Canal Comercial", subtitle: "Portal de clientes y distribuidores, proveedores y RRHH", desc: "Solicite el alta de cliente para acceder a logística directa y precios competitivos de planta.", label: "RAZÓN SOCIAL / NOMBRE", btn: "Solicitar Alta", clientesSubtitle: "CLIENTES Y DISTRIBUIDORES", clientesTitle: "Hace crecer tu negocio con Nuestros Productos", clientesLead: "Representa la calidad y la tradicion de La Playosa en tu zona. Ofrecemos un catalogo completo de quesos blandos, semiduros y duros, producidos con la mas alta tecnologia y bajo estrictas normas de sanidad. Brindamos logistica eficiente y soporte comercial para asegurar el exito de tu distribucion.", clientesNote: "Dejanos tus datos, y te enviaremos Catalogo de Productos y Condiciones", clientesBtn: "Completar Formulario", clientesFormAction: "https://formspree.io/f/TU_ID_CLIENTES", clientesFormTitle: "Formulario Clientes", clientesSubmit: "Enviar", proveedoresSubtitle: "PROVEEDORES", proveedoresTitle: "Sumate a nuestra Cadena de valor", proveedoresNote: "Buscamos productores que compartan nuestro compromiso con la excelencia. En Lacteos Cerutti, ofrecemos una relacion basada en la transparencia, el asesoramiento tecnico y el crecimiento mutuo. Si tenes un tambo en la region y buscas el respaldo de una industria solida con logistica propia, queremos conocerte.", proveedoresBtn: "Completar Formulario", proveedoresFormAction: "https://formspree.io/f/TU_ID_PROVEEDORES", proveedoresFormTitle: "Formulario Proveedores", proveedoresSubmit: "Enviar", talentoFormAction: "https://formspree.io/f/TU_ID_RRHH", talentoFormTitle: "Formulario de Postulantes", talentoSubmit: "Enviar", talentoTitle: "Sumate a la familia de Lacteos Cerutti", talentoLead: "Creemos que la excelencia de nuestros quesos es el resultado del talento y la pasion de nuestra gente. En Lacteos Cerutti, cada integrante es pieza fundamental de un legado que combina tradicion lactea con vanguardia tecnologica.", talentoNote: "Dejanos tu CV y forma parte de nuestra base de talentos para futuras vacantes en areas operativas, tecnicas o administrativas.", talentoBtn: "Completar Formulario", talentoSubtitle: "RRHH" },
             empresa: {
                 title: "NUESTRA HISTORIA",
-                heroSubtitle: "El Legado de Miguel Cerutti",
+                heroSubtitle: "El Legado de Miguel Angel Cerutti",
                 subtitle: "LEGADO Y COMPROMISO",
                 historia: "Lácteos Cerutti es el testimonio vivo de un sueño nacido en el corazón de La Playosa. Desde sus inicios en 2001, Miguel Cerutti proyectó una industria que no solo procesara leche, sino que transformara la materia prima en piezas de valor artesanal con estándares internacionales.",
                 historia2: "Junto a su compañera incondicional, su esposa Norma, y el empuje de sus hijos, la empresa ha evolucionado de un pequeño emprendimiento familiar a una planta modelo. Tras la partida de su fundador, el legado continúa con la misma fuerza, donde la nueva generación combina el respeto por los valores tradicionales con una visión de modernización tecnológica constante.",
@@ -89,7 +89,7 @@
         btnCon: "Contact Us ✈",
         showcaseTitle: "OUR PRODUCTS",
         showcaseSubtitle: "Soft · Semi-hard · Hard",
-        fText: "© 2026 LÁCTEOS CERUTTI | LA PLAYOSA, CÓRDOBA, ARGENTINA.<br>TECHNOLOGY AND TRADITION IN EVERY PIECE.",
+        fText: "© 2026 LÁCTEOS CERUTTI | LA PLAYOSA, CÓRDOBA, ARGENTINA.<br><span class=\"footer-slogan-red\">PRODUCTOS PARA PALADARES EXIGENTES</span>",
         sections: {
             actividad: {
                 title: "Our Industrial Activity",
@@ -172,7 +172,7 @@ i18n.pt = {
     btnCon: "Contate-nos ✈",
     showcaseTitle: "NOSSOS PRODUTOS",
     showcaseSubtitle: "Macios · Semiduros · Duros",
-    fText: "© 2026 LÁCTEOS CERUTTI | LA PLAYOSA, CÓRDOBA, ARGENTINA.<br>TECNOLOGIA E TRADIÇÃO EM CADA PEÇA.",
+    fText: "© 2026 LÁCTEOS CERUTTI | LA PLAYOSA, CÓRDOBA, ARGENTINA.<br><span class=\"footer-slogan-red\">PRODUCTOS PARA PALADARES EXIGENTES</span>",
     sections: {
         actividad: {
             title: "Nossa Atividade Industrial",
@@ -279,7 +279,7 @@ const staticI18n = {
     es: {
         aboutSubtitle: 'Nuestra Historia',
         aboutTitle: 'Quiénes Somos',
-        aboutP1: '<strong>"Lácteos Cerutti"</strong> es el testimonio vivo de un sueño nacido el <strong>15 de marzo de 2001</strong> en el corazón de <strong>La Playosa, Córdoba</strong>. Bajo la visión de su fundador, <strong>Miguel Cerutti</strong>, la empresa proyectó una industria que transformara la materia prima en piezas de valor artesanal con estándares internacionales.',
+        aboutP1: '<strong>"Lácteos Cerutti"</strong> es el testimonio vivo de un sueño nacido el <strong>15 de marzo de 2001</strong> en el corazón de <strong>La Playosa, Córdoba</strong>. Bajo la visión de su fundador, <strong>Miguel Angel Cerutti</strong>, la empresa proyectó una industria que transformara la materia prima en piezas de valor artesanal con estándares internacionales.',
         aboutP2: 'Hoy, ese legado continua con la misma fuerza. Contamos con una planta modelo e infraestructura avanzada, donde la nueva generacion combina el respeto por los valores tradicionales con una modernizacion tecnologica constante, garantizando la excelencia en cada mesa argentina.',
         innovationSubtitle: 'Nuestra Planta',
         innovationTitle: 'Innovación y Tecnología',
@@ -669,8 +669,7 @@ function applyStaticTranslations(lang) {
     setHtml('#quality-section .quality-card:nth-child(3) p', t.calidadP3);
 
     setText('.site-footer .footer-col:first-child .footer-heading:nth-of-type(1)', t.footerSocial);
-    setText('.site-footer .footer-col:first-child .footer-heading:nth-of-type(2)', t.footerAtencion);
-    setText('.site-footer .footer-col:first-child .footer-heading:nth-of-type(3)', t.footerCorreo);
+    setText('.site-footer .footer-col:first-child .footer-heading:nth-of-type(2)', t.footerCorreo);
     setHtml('.footer-address', t.footerAddress);
 
     const footerNav = document.querySelectorAll('.footer-nav-col a');
@@ -898,9 +897,9 @@ function renderActividad(container, data) {
 
 function renderProductos(container) {
     const labelsByLang = {
-        es: { heroTitle: 'NUESTRO CATÁLOGO', heroSub: 'TRADICIÓN EN CADA VARIEDAD', sectionTitle: 'Nuestros Productos', cheeses: 'QUESOS', sheet: 'VER FICHA TECNICA', cat: { BLANDOS: 'BLANDOS', SEMIDUROS: 'SEMIDUROS', DUROS: 'DUROS' } },
-        en: { heroTitle: 'OUR CATALOG', heroSub: 'TRADITION IN EVERY VARIETY', sectionTitle: 'Our Products', cheeses: 'CHEESES', sheet: 'VIEW TECHNICAL SHEET', cat: { BLANDOS: 'SOFT', SEMIDUROS: 'SEMI-HARD', DUROS: 'HARD' } },
-        pt: { heroTitle: 'NOSSO CATÁLOGO', heroSub: 'TRADIÇÃO EM CADA VARIEDADE', sectionTitle: 'Nossos Produtos', cheeses: 'QUEIJOS', sheet: 'VER FICHA TÉCNICA', cat: { BLANDOS: 'MACIOS', SEMIDUROS: 'SEMIDUROS', DUROS: 'DUROS' } }
+        es: { heroTitle: 'NUESTRO CATÁLOGO', heroSub: 'PRODUCTOS PARA PALADARES EXIGENTES', sectionTitle: 'Nuestros Productos', cheeses: 'QUESOS', sheet: 'VER FICHA TECNICA', cat: { BLANDOS: 'BLANDOS', SEMIDUROS: 'SEMIDUROS', DUROS: 'DUROS' } },
+        en: { heroTitle: 'OUR CATALOG', heroSub: 'PRODUCTOS PARA PALADARES EXIGENTES', sectionTitle: 'Our Products', cheeses: 'CHEESES', sheet: 'VIEW TECHNICAL SHEET', cat: { BLANDOS: 'SOFT', SEMIDUROS: 'SEMI-HARD', DUROS: 'HARD' } },
+        pt: { heroTitle: 'NOSSO CATÁLOGO', heroSub: 'PRODUCTOS PARA PALADARES EXIGENTES', sectionTitle: 'Nossos Produtos', cheeses: 'QUEIJOS', sheet: 'VER FICHA TÉCNICA', cat: { BLANDOS: 'MACIOS', SEMIDUROS: 'SEMIDUROS', DUROS: 'DUROS' } }
     };
     const labels = labelsByLang[currentLang] || labelsByLang.es;
 
@@ -923,9 +922,9 @@ function renderProductos(container) {
     let html = `
         <div class="page-hero">
             <div class="page-hero-img hero-img-productos"></div>
-            <div class="page-hero-text">
-                <h2>${labels.heroTitle}</h2>
-                <p style="letter-spacing:5px;">${labels.heroSub}</p>
+            <div class="page-hero-text page-hero-text--products">
+                <h2 class="page-hero-title--products">${labels.heroTitle}</h2>
+                <p class="hero-slogan hero-slogan--products">${labels.heroSub}</p>
             </div>
         </div>
         <div class="section-padding products-catalog-bg">
